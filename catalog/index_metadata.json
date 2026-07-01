@@ -1,0 +1,305 @@
+[
+  {
+    "index": 0,
+    "name": "SHL Occupational Personality Questionnaire (OPQ32r)",
+    "url": "https://www.shl.com/products/assessments/personality-assessment/shl-occupational-personality-questionnaire-opq/",
+    "test_type": "Personality",
+    "duration": "25 mins",
+    "description": "Measures 32 specific personality characteristics to predict job performance, work behaviors, leadership potential, and cultural fit. Highly accurate and widely used globally.",
+    "skills": [
+      "Leadership",
+      "Collaboration",
+      "Decision Making",
+      "Influence",
+      "Adaptability",
+      "Stress Tolerance",
+      "Teamwork",
+      "Personality"
+    ]
+  },
+  {
+    "index": 1,
+    "name": "SHL Motivation Questionnaire (MQ)",
+    "url": "https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/",
+    "test_type": "Personality",
+    "duration": "25 mins",
+    "description": "Assesses 18 motivational factors that affect energy, engagement, and performance at work, helping identify what drives employees in their roles.",
+    "skills": [
+      "Employee Drive",
+      "Job Engagement",
+      "Retention",
+      "Growth Mindset",
+      "Motivation"
+    ]
+  },
+  {
+    "index": 2,
+    "name": "SHL Verify Inductive Reasoning",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "18 mins",
+    "description": "Measures the ability to solve conceptual and logical problems, identify patterns, and draw conclusions from abstract information. Crucial for problem-solving roles.",
+    "skills": [
+      "Problem Solving",
+      "Logical Reasoning",
+      "Pattern Recognition",
+      "Abstract Thinking",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 3,
+    "name": "SHL Verify Numerical Reasoning",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "18 mins",
+    "description": "Measures the ability to analyze, interpret, and draw logical conclusions from numerical data presented in tables, charts, or graphs.",
+    "skills": [
+      "Data Analysis",
+      "Mathematical Aptitude",
+      "Financial Analysis",
+      "Quantitative Reasoning",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 4,
+    "name": "SHL Verify Verbal Reasoning",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "18 mins",
+    "description": "Measures the ability to evaluate, analyze, and interpret written business reports and draw logical conclusions from text.",
+    "skills": [
+      "Critical Thinking",
+      "Reading Comprehension",
+      "Verbal Logic",
+      "Communication",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 5,
+    "name": "SHL Verify Deductive Reasoning",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "18 mins",
+    "description": "Evaluates the ability to draw logical conclusions based on statements, arguments, or rules. Crucial for roles requiring structured logical thinking.",
+    "skills": [
+      "Structured Logic",
+      "Problem Solving",
+      "Analytical Skills",
+      "Deductive Logic",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 6,
+    "name": "SHL Verify Spatial Ability",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "15 mins",
+    "description": "Measures the ability to mentally manipulate, rotate, and understand the relationships between 2D and 3D shapes or figures.",
+    "skills": [
+      "Spatial Reasoning",
+      "Visualization",
+      "Design Interpretation",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 7,
+    "name": "SHL Verify Mechanical Comprehension",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "15 mins",
+    "description": "Assesses understanding of mechanical principles, physical forces, and engineering concepts in practical scenarios.",
+    "skills": [
+      "Physics Aptitude",
+      "Mechanical Reasoning",
+      "Technical Problem Solving",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 8,
+    "name": "SHL Verify G+ (General Mental Ability)",
+    "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+    "test_type": "Cognitive",
+    "duration": "36 mins",
+    "description": "Combined cognitive test that evaluates numerical, inductive, and deductive reasoning skills in a single, streamlined assessment.",
+    "skills": [
+      "General Mental Ability",
+      "Numerical Reasoning",
+      "Inductive Reasoning",
+      "Deductive Reasoning",
+      "Cognitive Ability"
+    ]
+  },
+  {
+    "index": 9,
+    "name": "SHL Global Skills Assessment (GSA)",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/global-skills-assessment-gsa/",
+    "test_type": "Behavioral",
+    "duration": "30 mins",
+    "description": "Evaluates essential workplace behaviors and competencies required in modern, collaborative, and fast-paced environments.",
+    "skills": [
+      "Collaboration",
+      "Communication",
+      "Problem Solving",
+      "Adaptability",
+      "Customer Focus"
+    ]
+  },
+  {
+    "index": 10,
+    "name": "SHL Situational Judgment Test (SJT)",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/",
+    "test_type": "Behavioral",
+    "duration": "25 mins",
+    "description": "Presents candidates with realistic, challenging workplace situations and evaluates their decision-making and judgment in choosing responses.",
+    "skills": [
+      "Decision Making",
+      "Conflict Resolution",
+      "Professional Judgment",
+      "Interpersonal Skills",
+      "Ethics"
+    ]
+  },
+  {
+    "index": 11,
+    "name": "SHL Coding Simulations (Java)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+    "test_type": "Skills & Simulations",
+    "duration": "45 mins",
+    "description": "Measures Java development skills, including coding accuracy, logic, syntax, and debugging capabilities in an interactive environment.",
+    "skills": [
+      "Java",
+      "Object-Oriented Programming",
+      "Backend Development",
+      "Debugging",
+      "Algorithms",
+      "Software Engineering"
+    ]
+  },
+  {
+    "index": 12,
+    "name": "SHL Coding Simulations (Python)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+    "test_type": "Skills & Simulations",
+    "duration": "45 mins",
+    "description": "Measures Python development skills, including logic, data structures, scripting, and backend programming in a live code environment.",
+    "skills": [
+      "Python",
+      "Backend Development",
+      "Data Structures",
+      "Algorithms",
+      "Scripting",
+      "Debugging"
+    ]
+  },
+  {
+    "index": 13,
+    "name": "SHL Coding Simulations (Frontend React)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+    "test_type": "Skills & Simulations",
+    "duration": "45 mins",
+    "description": "Assesses frontend engineering skills using React, JavaScript, HTML, and CSS in realistic UI building scenarios.",
+    "skills": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Frontend Development",
+      "Web Development"
+    ]
+  },
+  {
+    "index": 14,
+    "name": "SHL Coding Simulations (SQL)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+    "test_type": "Skills & Simulations",
+    "duration": "30 mins",
+    "description": "Evaluates SQL query writing skills, database manipulation, schema understanding, and complex query optimizations.",
+    "skills": [
+      "SQL",
+      "Database Querying",
+      "Data Extraction",
+      "Relational Databases",
+      "Backend Development"
+    ]
+  },
+  {
+    "index": 15,
+    "name": "SHL Technical Skills (AWS Cloud Architecture)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/technical-skills/",
+    "test_type": "Skills & Simulations",
+    "duration": "40 mins",
+    "description": "Evaluates capability in cloud architecture, deployment, security, and resource management on Amazon Web Services.",
+    "skills": [
+      "AWS",
+      "Cloud Computing",
+      "DevOps",
+      "Infrastructure as Code",
+      "Security"
+    ]
+  },
+  {
+    "index": 16,
+    "name": "SHL Technical Skills (Linux System Administration)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/technical-skills/",
+    "test_type": "Skills & Simulations",
+    "duration": "30 mins",
+    "description": "Assesses competency in Linux environment commands, shell scripting, user management, and system configuration.",
+    "skills": [
+      "Linux",
+      "Shell Scripting",
+      "System Administration",
+      "Network Configuration"
+    ]
+  },
+  {
+    "index": 17,
+    "name": "SHL Business Skills (Microsoft Excel)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/business-skills/",
+    "test_type": "Skills & Simulations",
+    "duration": "25 mins",
+    "description": "Measures Excel proficiency including formulas, data analysis, pivot tables, and formatting.",
+    "skills": [
+      "Microsoft Excel",
+      "Data Analysis",
+      "Spreadsheets",
+      "Bookkeeping",
+      "Reporting"
+    ]
+  },
+  {
+    "index": 18,
+    "name": "SHL Language Evaluation (English Proficiency)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/language-evaluation/",
+    "test_type": "Skills & Simulations",
+    "duration": "20 mins",
+    "description": "Evaluates English vocabulary, grammar, reading comprehension, and spoken fluency for global workplace communications.",
+    "skills": [
+      "English Language",
+      "Verbal Communication",
+      "Written Comprehension",
+      "Vocabulary",
+      "Grammar"
+    ]
+  },
+  {
+    "index": 19,
+    "name": "SHL Call Center Simulations (Customer Service)",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/call-center-simulations/",
+    "test_type": "Skills & Simulations",
+    "duration": "30 mins",
+    "description": "Puts candidates in simulated call scenarios to handle customer inquiries, assess communication, data entry, and conflict resolution.",
+    "skills": [
+      "Customer Service",
+      "Active Listening",
+      "Problem Solving",
+      "Data Entry",
+      "Conflict Resolution"
+    ]
+  }
+]

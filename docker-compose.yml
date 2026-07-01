@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - USE_TF=NO
+      - USE_TORCH=YES
+      - PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

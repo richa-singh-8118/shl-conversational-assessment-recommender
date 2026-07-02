@@ -753,7 +753,7 @@ body {
 }
 
 /* Responsive Breakpoints */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .app-container {
         grid-template-columns: 1fr;
         height: 96vh;

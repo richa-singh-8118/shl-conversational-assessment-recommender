@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversational SHL Assessment Recommender</title>
+    <meta name="description" content="An intelligent conversational AI agent that guides you to find the perfect SHL assessments for your job roles, cognitive testing, personality screening, and skill verification.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Inline favicon or fallback to emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar with Hiring Profile -->
+        <aside class="sidebar-panel" id="sidebar-panel">
+            <div class="sidebar-header">
+                <h2>Hiring Profile</h2>
+                <span class="badge badge-pulse" id="profile-status">Awaiting Input</span>
+            </div>
+            
+            <div class="profile-card">
+                <div class="profile-field">
+                    <span class="field-label">Target Role</span>
+                    <span class="field-value" id="profile-role">—</span>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Seniority Level</span>
+                    <span class="field-value" id="profile-seniority">—</span>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Skills & Tech Stack</span>
+                    <div class="skills-list" id="profile-skills">
+                        <span class="empty-msg">No skills identified yet</span>
+                    </div>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Assessment Focus Areas</span>
+                    <div class="focus-areas" id="profile-focus">
+                        <span class="focus-chip" id="focus-cognitive" data-focus="cognitive">Cognitive</span>
+                        <span class="focus-chip" id="focus-personality" data-focus="personality">Personality</span>
+                        <span class="focus-chip" id="focus-behavioral" data-focus="behavioral">Behavioral</span>
+                        <span class="focus-chip" id="focus-skills" data-focus="skills">Skills/Sims</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions-card">
+                <h3>Tips for Best Results</h3>
+                <ul>
+                    <li>Mention the exact job title.</li>
+                    <li>Specify desired seniority (e.g. Senior, Junior).</li>
+                    <li>List core skills required.</li>
+                    <li>Ask to "Compare" tests for tabular breakdowns.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-panel">
+            <header class="chat-header">
+                <div class="header-info">
+                    <div class="brand">
+                        <div class="brand-logo">🧠</div>
+                        <div>
+                            <h1 id="main-title">SHL Assessment Recommender</h1>
+                            <p class="subtitle">Conversational recruitment copilot powered by Gemini</p>
+                        </div>
+                    </div>
+                    <div class="system-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Agent Online</span>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" id="reset-chat-btn" title="Reset current conversation">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                    Reset
+                </button>
+            </header>
+
+            <!-- Chat History -->
+            <div class="chat-messages" id="chat-messages">
+                <!-- Welcome Message -->
+                <div class="message message-assistant animate-fade-in">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content-wrapper">
+                        <div class="message-bubble">
+                            <p>Hello! I am your SHL Assessment Recommender. I can help you discover, evaluate, and compare SHL test products tailored specifically to your hiring requirements.</p>
+                            <p>To get started, tell me about the job role you are hiring for, the seniority level, or specific skill domains you want to assess.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input area panel -->
+            <footer class="chat-input-panel">
+                <!-- Suggestion Quick Chips -->
+                <div class="suggestions-container" id="suggestions-container">
+                    <button class="chip" data-query="I am hiring a Senior Java Developer.">Senior Java Dev</button>
+                    <button class="chip" data-query="Compare OPQ32r and Motivation Questionnaire.">Compare OPQ & MQ</button>
+                    <button class="chip" data-query="I need cognitive assessments for a graduate data analyst role.">Graduate Data Analyst</button>
+                    <button class="chip" data-query="What tests can I use for Customer Support roles?">Customer Support</button>
+                </div>
+
+                <form class="input-form" id="chat-form" onsubmit="return false;">
+                    <input type="text" 
+                           id="chat-input" 
+                           placeholder="Ask about assessments or specify your hiring requirements..." 
+                           autocomplete="off" 
+                           required>
+                    <button type="submit" class="btn btn-primary" id="send-btn">
+                        <span>Send</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Script loading -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

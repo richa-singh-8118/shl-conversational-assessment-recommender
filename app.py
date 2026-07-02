@@ -1,19 +1,35 @@
 import os
+import asyncio
 # Configure environment overrides before other imports
 os.environ["USE_TF"] = "NO"
 os.environ["USE_TORCH"] = "YES"
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from api.routes import router
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Pre-warm the VectorStore (downloads ST model + loads FAISS) at startup."""
+    print("[startup] Pre-loading VectorStore and SentenceTransformer model...")
+    try:
+        from retrieval.vectorstore import get_vector_store
+        loop = asyncio.get_event_loop()
+        await loop.run_in_executor(None, get_vector_store)
+        print("[startup] VectorStore ready.")
+    except Exception as e:
+        print(f"[startup] WARNING: Could not pre-load VectorStore: {e}")
+    yield
+
 app = FastAPI(
     title="Conversational SHL Assessment Recommender",
     description="A stateless conversational AI agent to discover SHL assessments.",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan
 )
 
 # Configure CORS - open for automated test runners

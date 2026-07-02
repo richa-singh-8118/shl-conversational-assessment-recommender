@@ -1,5 +1,4 @@
 import os
-import asyncio
 # Configure environment overrides before other imports
 os.environ["USE_TF"] = "NO"
 os.environ["USE_TORCH"] = "YES"
@@ -14,16 +13,10 @@ from api.routes import router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Pre-warm the VectorStore (downloads ST model + loads FAISS) at startup."""
-    print("[startup] Pre-loading VectorStore and SentenceTransformer model...")
-    try:
-        from retrieval.vectorstore import get_vector_store
-        loop = asyncio.get_event_loop()
-        await loop.run_in_executor(None, get_vector_store)
-        print("[startup] VectorStore ready.")
-    except Exception as e:
-        print(f"[startup] WARNING: Could not pre-load VectorStore: {e}")
+    """Startup event - no pre-warm to save memory on free tier."""
+    print("[startup] SHL Assessment Recommender starting up...")
     yield
+    print("[shutdown] Server shutting down.")
 
 app = FastAPI(
     title="Conversational SHL Assessment Recommender",

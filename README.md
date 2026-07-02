@@ -2,6 +2,8 @@
 
 A stateless, production-ready conversational AI agent that helps recruiters and hiring managers discover appropriate SHL assessments through natural conversation.
 
+🚀 **Live Demo:** [https://shl-assessment-recommender.onrender.com](https://shl-assessment-recommender.onrender.com)
+
 ---
 
 ## Features

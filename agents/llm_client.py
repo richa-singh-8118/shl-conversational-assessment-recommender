@@ -23,8 +23,8 @@ class LLMClient:
         if self.use_api:
             try:
                 self._client = genai.Client(api_key=self.api_key)
-                # gemini-2.0-flash is the recommended efficient model
-                self.model_name = "gemini-2.0-flash"
+                # gemini-2.5-flash is the recommended efficient model
+                self.model_name = "gemini-2.5-flash"
                 print(f"Gemini API configured successfully with model {self.model_name}.")
             except Exception as e:
                 print(f"Error configuring Gemini API: {e}. Falling back to simulated mode.")

@@ -66,7 +66,7 @@ def test_chat_response_schema_strict():
     response = client.post("/chat", json=payload)
     assert response.status_code == 200
     data = response.json()
-    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation"}
+    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation", "context"}
 
 
 def test_chat_empty_messages_error():

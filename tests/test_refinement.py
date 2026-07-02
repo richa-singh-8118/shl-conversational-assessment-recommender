@@ -21,7 +21,7 @@ def test_refinement_add_personality():
     assert isinstance(data["end_of_conversation"], bool)
 
     # Response schema must remain strictly correct
-    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation"}
+    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation", "context"}
 
 
 def test_refinement_change_seniority():
@@ -36,7 +36,7 @@ def test_refinement_change_seniority():
     response = client.post("/chat", json=payload)
     assert response.status_code == 200
     data = response.json()
-    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation"}
+    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation", "context"}
 
 
 def test_refinement_change_role():
@@ -51,5 +51,5 @@ def test_refinement_change_role():
     response = client.post("/chat", json=payload)
     assert response.status_code == 200
     data = response.json()
-    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation"}
+    assert set(data.keys()) == {"reply", "recommendations", "end_of_conversation", "context"}
     assert isinstance(data["recommendations"], list)
